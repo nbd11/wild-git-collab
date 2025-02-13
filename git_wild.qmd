@@ -16,6 +16,12 @@ execute:
 ### ggplot2 package) and create a plot of price vs. carat (or some other
 ### variables of your choice)
 
+library(tidyverse)
+
+data("diamonds")
+
+p_v_carat <- ggplot(data=diamonds,aes(x=price,y=carat))+
+  geom_jitter()
 
 ```
 
